@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="nav-container">
+		<nav>
+			<h1>BOOKSHELF<br>DANTALIAN BLIBLIOTECA</h1>
+		</nav>
+	</header>
+	<main>
+		<form class="container-masukanBuku" id="inputBook">	
+			<h3>Masukan Buku Baru</h3>
+			<div id="con-judul">
+				<label for="judul" class="labelBuku">Judul Buku</label>
+				<input type="text" name="judul" class="inptJudul">
+			</div>
+			<div id="con-penulis">
+				<label for="penulis" class="labelPenulis">Penulis Buku</label>
+				<input name="penulis" class="inputPenulis">
+			</div>
+			<div id="con-tahun">
+				<label for="tahun" class="labelTahun">Tahun</label>
+				<input name="tahun" class="inputTahun" type="number"  maxlength="4">
+			</div>
+			<div id="con-checkbox">
+				<label>Selesai dibaca</label>
+				<input type="checkbox" class="checkbox">
+			</div>
+			<div id="con-submit">
+				<button class="submitBuku">submit</button> 
+			</div>
+		</form>
+
+		<section class="container-cari">
+			<h3>Cari Buku (Optional)</h3>
+			<input type="text" name="cari" class="inputCari" placeholder="Masukan Judul">
+			<button name="cari" class="submitCari">Cari</button>
+		</section>
+
+		<section class="book_shelf">
+			<h3>Belum selesai dibaca</h3>
+			<div class="container-belumSelesai">
+			</div>
+		</section>
+
+		<section class="book_shelf">
+			<h3>Selesai dibaca</h3>
+			<div class="container-dibaca">
+			</div>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
